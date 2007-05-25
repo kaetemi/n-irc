@@ -1,0 +1,146 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.20404</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ABD77E1B-7D7B-4DE0-8B87-5E2B2F808283}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>nIRC</RootNamespace>
+    <AssemblyName>n-irc</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>nIRC.Program</StartupObject>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SignAssembly>false</SignAssembly>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release .NET|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\net\</OutputPath>
+    <DefineConstants>TRACE;NET</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release Mono|AnyCPU' ">
+    <OutputPath>..\bin\mono\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleAssemblies>F:\Program Files\Microsoft Visual Studio 9.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleAssemblies>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Irc\Global.cs" />
+    <Compile Include="Irc\IrcClientConnection.cs" />
+    <Compile Include="Irc\IrcClientConnection.Send.cs" />
+    <Compile Include="Irc\IrcEnvChannel.cs" />
+    <Compile Include="Irc\IrcEnvironment.cs" />
+    <Compile Include="Irc\IrcLineReader.cs" />
+    <Compile Include="Irc\IrcUserStruct.cs" />
+    <Compile Include="UI\Environment.cs" />
+    <Compile Include="UI\Global.cs" />
+    <Compile Include="UI\WinForms\AboutWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\WinForms\ChatWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\WinForms\ColorSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\WinForms\ChatInputBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\WinForms\Config.cs" />
+    <Compile Include="UI\WinForms\FormatColors.cs" />
+    <Compile Include="UI\WinForms\IrcWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\WinForms\LaunchWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\WinForms\Mono\ChatOutputBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\WinForms\TransferManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\WinForms\TransferWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\WinForms\NetFramework\ChatOutputBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\WinForms\ChatUserlistBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\WinForms\SubEnvironment.cs" />
+    <Compile Include="Properties\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\WinForms\Environment.cs" />
+    <Compile Include="UI\WinForms\MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\WinForms\ToolBarWindowButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\WinForms\Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

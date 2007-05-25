@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio Codename Orcas
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "n-irc", "src\n-irc.csproj", "{ABD77E1B-7D7B-4DE0-8B87-5E2B2F808283}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release .NET|Any CPU = Release .NET|Any CPU
+		Release Mono|Any CPU = Release Mono|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABD77E1B-7D7B-4DE0-8B87-5E2B2F808283}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABD77E1B-7D7B-4DE0-8B87-5E2B2F808283}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABD77E1B-7D7B-4DE0-8B87-5E2B2F808283}.Release .NET|Any CPU.ActiveCfg = Release .NET|Any CPU
+		{ABD77E1B-7D7B-4DE0-8B87-5E2B2F808283}.Release .NET|Any CPU.Build.0 = Release .NET|Any CPU
+		{ABD77E1B-7D7B-4DE0-8B87-5E2B2F808283}.Release Mono|Any CPU.ActiveCfg = Release Mono|Any CPU
+		{ABD77E1B-7D7B-4DE0-8B87-5E2B2F808283}.Release Mono|Any CPU.Build.0 = Release Mono|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,61 @@
+<Project name="n-irc" fileversion="2.0" language="C#" clr-version="Net_2_0" ctype="DotNetProject">
+  <Configurations active="Release">
+    <Configuration name="Debug" ctype="DotNetProjectConfiguration">
+      <Output directory="../bin/debug" assembly="n-irc" />
+      <Build debugmode="True" target="Exe" />
+      <Execution runwithwarnings="True" consolepause="True" runtime="MsNet" clr-version="Net_2_0" />
+      <CodeGeneration compiler="Csc" warninglevel="4" optimize="False" unsafecodeallowed="False" generateoverflowchecks="True" mainclass="" definesymbols="DEBUG" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+    <Configuration name="Release" ctype="DotNetProjectConfiguration">
+      <Output directory="../bin/mono" assembly="n-irc" />
+      <Build debugmode="False" target="Exe" />
+      <Execution runwithwarnings="True" consolepause="True" runtime="MsNet" clr-version="Net_2_0" />
+      <CodeGeneration compiler="Csc" warninglevel="4" optimize="True" unsafecodeallowed="False" generateoverflowchecks="True" mainclass="" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+  </Configurations>
+  <DeployTargets />
+  <Contents>
+    <File name="./Global.cs" subtype="Code" buildaction="Compile" />
+    <File name="./Irc" subtype="Directory" buildaction="Compile" />
+    <File name="./UI" subtype="Directory" buildaction="Compile" />
+    <File name="./Properties" subtype="Directory" buildaction="Compile" />
+    <File name="./Irc/Global.cs" subtype="Code" buildaction="Compile" />
+    <File name="./Irc/IrcClientConnection.cs" subtype="Code" buildaction="Compile" />
+    <File name="./Irc/IrcClientConnection.Send.cs" subtype="Code" buildaction="Compile" />
+    <File name="./Irc/IrcEnvironment.cs" subtype="Code" buildaction="Compile" />
+    <File name="./Irc/IrcLineReader.cs" subtype="Code" buildaction="Compile" />
+    <File name="./Irc/IrcUserStruct.cs" subtype="Code" buildaction="Compile" />
+    <File name="./Properties/AssemblyInfo.cs" subtype="Code" buildaction="Compile" />
+    <File name="./Properties/Program.cs" subtype="Code" buildaction="Compile" />
+    <File name="./UI/Environment.cs" subtype="Code" buildaction="Compile" />
+    <File name="./UI/Global.cs" subtype="Code" buildaction="Compile" />
+    <File name="./UI/WinForms" subtype="Directory" buildaction="Compile" />
+    <File name="./UI/WinForms/Mono" subtype="Directory" buildaction="Compile" />
+    <File name="./UI/WinForms/NetFramework" subtype="Directory" buildaction="Compile" />
+    <File name="./UI/WinForms/ChatInputBox.cs" subtype="Code" buildaction="Compile" />
+    <File name="./UI/WinForms/ChatUserlistBox.cs" subtype="Code" buildaction="Compile" />
+    <File name="./UI/WinForms/ChatWindow.cs" subtype="Code" buildaction="Compile" />
+    <File name="./UI/WinForms/ColorSelection.cs" subtype="Code" buildaction="Compile" />
+    <File name="./UI/WinForms/Environment.cs" subtype="Code" buildaction="Compile" />
+    <File name="./UI/WinForms/MainWindow.cs" subtype="Code" buildaction="Compile" />
+    <File name="./UI/WinForms/SubEnvironment.cs" subtype="Code" buildaction="Compile" />
+    <File name="./UI/WinForms/ToolBarWindowButton.cs" subtype="Code" buildaction="Compile" />
+    <File name="./UI/WinForms/TransferManager.cs" subtype="Code" buildaction="Compile" />
+    <File name="./UI/WinForms/TransferWindow.cs" subtype="Code" buildaction="Compile" />
+    <File name="./UI/WinForms/Window.cs" subtype="Code" buildaction="Compile" />
+    <File name="./UI/WinForms/NetFramework/ChatOutputBox.cs" subtype="Code" buildaction="Compile" />
+    <File name="./UI/WinForms/FormatColors.cs" subtype="Code" buildaction="Compile" />
+    <File name="./UI/WinForms/Mono/ChatOutputBox.cs" subtype="Code" buildaction="Compile" />
+    <File name="./UI/WinForms/AboutWindow.cs" subtype="Code" buildaction="Compile" />
+    <File name="./Irc/IrcEnvChannel.cs" subtype="Code" buildaction="Compile" />
+    <File name="./UI/WinForms/Config.cs" subtype="Code" buildaction="Compile" />
+    <File name="./UI/WinForms/IrcWizard.cs" subtype="Code" buildaction="Compile" />
+    <File name="./UI/WinForms/LaunchWindow.cs" subtype="Code" buildaction="Compile" />
+    <File name="./Config.cs" subtype="Code" buildaction="Compile" />
+  </Contents>
+  <References>
+    <ProjectReference type="Gac" localcopy="True" refto="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <ProjectReference type="Gac" localcopy="True" refto="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  </References>
+</Project>

@@ -1,0 +1,17 @@
+<Combine name="n-irc_monodev" fileversion="2.0" outputpath="./bin/mono" MakePkgConfig="False" MakeLibPC="True">
+  <Configurations active="Release">
+    <Configuration name="Debug" ctype="CombineConfiguration">
+      <Entry build="True" name="n-irc" configuration="Debug" />
+    </Configuration>
+    <Configuration name="Release" ctype="CombineConfiguration">
+      <Entry build="True" name="n-irc" configuration="Release" />
+    </Configuration>
+  </Configurations>
+  <DeployTargets />
+  <StartMode startupentry="n-irc" single="True">
+    <Execute type="None" entry="n-irc" />
+  </StartMode>
+  <Entries>
+    <Entry filename="./src/n-irc_monodev.mdp" />
+  </Entries>
+</Combine>
