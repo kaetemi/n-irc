@@ -1,6 +1,5 @@
-﻿.nIRC - an IRC client written in C# and IronPython.
+.nIRC - an IRC client written in C#
 Copyright (C) 2007  Jan Boon
-Fonteinstraat 65, 1502 Lembeek, Belgium
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
